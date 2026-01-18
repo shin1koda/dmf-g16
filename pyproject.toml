@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dmfg16"
+version = "1.0.0"
+description = "A Gaussian wrapper for PyDMF double-ended trnaition-state searches"
+keywords = ["reaction path", "transition state", "Gaussian", "MaxFlux", "chemistry"]
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Shin-ichi Koda", email = "koda@ims.ac.jp" }
+]
+dependencies = [
+    "ase>=3.22",
+    "pydmf>=1.1",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
+
+
+[project.optional-dependencies]
+cyipopt = ["cyipopt>=1.4"]
+dev = [
+    "pytest",
+    "build",
+    "twine",
+]
+docs = [
+    "sphinx",
+    "sphinx_rtd_theme",
+    "sphinx-autodoc-typehints",
+    "ghp-import",
+]
+
+[project.scripts]
+dmf-g16 = "dmfg16.cli:g16"
+
+
+[project.urls]
+Homepage = "https://github.com/shin1koda/dmf-g16"
+Source = "https://github.com/shin1koda/dmf-g16"
+Issues = "https://github.com/shin1koda/dmf-g16/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["dmfg16*"]
+exclude = ["tests"]
+
