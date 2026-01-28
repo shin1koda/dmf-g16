@@ -63,5 +63,5 @@ We will do our best to provide guidance based on availability.
 
 ## License
 
-This project is distributed under the MIT License.
-
+This software is licensed under the GNU Lesser General Public License v2.1 or later.
+This software includes modified code derived from the Atomic Simulation Environment (ASE).

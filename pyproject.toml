@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dmfg16"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Gaussian wrapper for PyDMF double-ended trnaition-state searches"
 keywords = ["reaction path", "transition state", "Gaussian", "MaxFlux", "chemistry"]
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
-license = { file = "LICENSE" }
+license = { file = "COPYING.LESSER" }
 authors = [
   { name = "Shin-ichi Koda", email = "koda@ims.ac.jp" }
 ]
@@ -19,7 +19,7 @@ dependencies = [
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
     "Operating System :: OS Independent",
     "Topic :: Scientific/Engineering :: Chemistry",
 ]

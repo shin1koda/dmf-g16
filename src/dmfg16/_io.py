@@ -1,3 +1,6 @@
+# This file includes code derived from the Atomic Simulation Environment (ASE)
+# Copyright (C) ASE developers
+
 import ase.io.gaussian as iog
 import re
 from pathlib import Path
