@@ -10,6 +10,12 @@ from ase.io import read, write
 import numpy as np
 
 
+def gaussian_ase_command(exe):
+    if os.name == "nt":
+        return f'"{exe}" PREFIX.com PREFIX.log'
+    return exe + " < PREFIX.com > PREFIX.log"
+
+
 def read_input(inp_qst):
 
     with open(inp_qst) as fd:
@@ -120,7 +126,7 @@ def get_ts_guess(ref_images,params,args):
     }
 
     mxflx.add_ipopt_options(ipopt_options)
-    command = exe+" < PREFIX.com > PREFIX.log"
+    command = gaussian_ase_command(exe)
 
     for i,image in enumerate(mxflx.images):
         label = str(p_dir_dmf / f"image{i:02}")
@@ -288,6 +294,24 @@ def main(args):
             return
 
         cmd = [exe]
+        
+        if os.name == "nt":
+            cmd += [str(com2gau), str(log)]
+
+            proc = subprocess.run(
+                cmd,
+                stdout=subprocess.DEVNULL,
+                stderr=None,
+                text=True,
+            )
+
+            if log.exists():
+                with open(log, "r", errors="replace") as fin:
+                    for line in fin:
+                        sys.stdout.write(line)
+                        sys.stdout.flush()
+
+            sys.exit(proc.returncode)
 
         proc = subprocess.Popen(
             cmd,
