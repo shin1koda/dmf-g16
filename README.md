@@ -1,5 +1,17 @@
 # dmf-g16: A Gaussian wrapper for PyDMF double-ended transition-state searches
 
+## Overview
+
+dmf-g16 is a Gaussian wrapper for Direct MaxFlux (DMF)-based double-ended transition-state (TS) searches. It allows Gaussian users to perform DMF-based reaction-path optimization through PyDMF while keeping their existing Gaussian workflows almost unchanged.
+
+Users can run dmf-g16 with native Gaussian QST2/QST3 input files by simply replacing the Gaussian executable, such as `g16`, with `dmf-g16`. For QST inputs, dmf-g16 performs DMF-based path optimization using Gaussian for energy and gradient evaluations, then runs a Gaussian TS optimization from the highest-energy point on the optimized path.
+
+## Platform support
+
+dmf-g16 supports Linux and Windows environments.
+
+We gratefully acknowledge Dr. Hideya Tanaka (@tanaka-hideya) for contributing Windows support to dmf-g16.
+
 ## Requirements
 
 - [ASE](https://ase-lib.org/)
@@ -30,6 +42,12 @@ dmf-g16 < input.com > log
 
 
 ## Citation
+
+If you use dmf-g16 in your research, please cite the following paper:
+
+1. S.-i. Koda and  S. Saito, dmf-g16: A Gaussian Wrapper for Reliable Double-Ended Transition-State Searches With Native Input Formats, JCC, 47, e70378 (2026). [doi: 10.1002/jcc.70378](https://doi.org/10.1002/jcc.70378)
+
+The methods used in dmf-g16 are described in the following papers. While citing them is not required, we would greatly appreciate it if you could also cite them where appropriate:
 
  1. S.-i. Koda and  S. Saito, Locating Transition States by Variational Reaction Path Optimization with an Energy-Derivative-Free Objective Function, JCTC, 20, 2798–2811 (2024). [doi: 10.1021/acs.jctc.3c01246](https://doi.org/10.1021/acs.jctc.3c01246)
  1. S.-i. Koda and  S. Saito, Flat-bottom Elastic Network Model for Generating Improved Plausible Reaction Paths, JCTC, 20, 7176−7187 (2024). [doi: 10.1021/acs.jctc.4c00792](https://doi.org/10.1021/acs.jctc.4c00792)

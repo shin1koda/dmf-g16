@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dmfg16"
-version = "1.0.1"
+version = "1.1.0"
 description = "A Gaussian wrapper for PyDMF double-ended trnaition-state searches"
 keywords = ["reaction path", "transition state", "Gaussian", "MaxFlux", "chemistry"]
 readme = { file = "README.md", content-type = "text/markdown" }
