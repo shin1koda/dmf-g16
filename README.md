@@ -43,16 +43,21 @@ dmf-g16 < input.com > log
 
 ## Citation
 
-If you use dmf-g16 in your research, please cite the following paper:
+If you use dmf-g16 in your research, please cite Refs. 1 and 2.
 
-1. S.-i. Koda and  S. Saito, dmf-g16: A Gaussian Wrapper for Reliable Double-Ended Transition-State Searches With Native Input Formats, JCC, 47, e70378 (2026). [doi: 10.1002/jcc.70378](https://doi.org/10.1002/jcc.70378)
+ 1. S.-i. Koda and  S. Saito, dmf-g16: A Gaussian Wrapper for Reliable Double-Ended Transition-State Searches With Native Input Formats, JCC, 47, e70378 (2026). [doi: 10.1002/jcc.70378](https://doi.org/10.1002/jcc.70378)
+ 2. S.-i. Koda and  S. Saito, PyDMF: A Python package for variational double-ended reaction-path and transition-state optimization, J. Open Source Softw. 11, 10379 (2026). [doi: 10.21105/joss.10379](https://doi.org/10.21105/joss.10379)
 
-The methods used in dmf-g16 are described in the following papers. While citing them is not required, we would greatly appreciate it if you could also cite them where appropriate:
 
- 1. S.-i. Koda and  S. Saito, Locating Transition States by Variational Reaction Path Optimization with an Energy-Derivative-Free Objective Function, JCTC, 20, 2798–2811 (2024). [doi: 10.1021/acs.jctc.3c01246](https://doi.org/10.1021/acs.jctc.3c01246)
- 1. S.-i. Koda and  S. Saito, Flat-bottom Elastic Network Model for Generating Improved Plausible Reaction Paths, JCTC, 20, 7176−7187 (2024). [doi: 10.1021/acs.jctc.4c00792](https://doi.org/10.1021/acs.jctc.4c00792)
- 1. S.-i. Koda and  S. Saito, Correlated Flat-bottom Elastic Network Model for Improved Bond Rearrangement in Reaction Paths, JCTC, 21, 3513−3522 (2025). [doi: 10.1021/acs.jctc.4c01549](https://doi.org/10.1021/acs.jctc.4c01549)
+The underlying methods used by dmf-g16 are described in Refs. 3–5. We would greatly appreciate it if you could also cite these papers.
 
+ 3. S.-i. Koda and  S. Saito, Locating Transition States by Variational Reaction Path Optimization with an Energy-Derivative-Free Objective Function, JCTC, 20, 2798–2811 (2024). [doi: 10.1021/acs.jctc.3c01246](https://doi.org/10.1021/acs.jctc.3c01246)
+ 4. S.-i. Koda and  S. Saito, Flat-bottom Elastic Network Model for Generating Improved Plausible Reaction Paths, JCTC, 20, 7176−7187 (2024). [doi: 10.1021/acs.jctc.4c00792](https://doi.org/10.1021/acs.jctc.4c00792)
+ 5. S.-i. Koda and  S. Saito, Correlated Flat-bottom Elastic Network Model for Improved Bond Rearrangement in Reaction Paths, JCTC, 21, 3513−3522 (2025). [doi: 10.1021/acs.jctc.4c01549](https://doi.org/10.1021/acs.jctc.4c01549)
+
+For example:
+
+> Double-ended transition-state searches were performed using dmf-g16 [1], a Gaussian [appropriate reference] wrapper for PyDMF [2], a Python package implementing the Direct MaxFlux (DMF) method [3]. In these searches, two potential-energy models were employed: the flat-bottom elastic network model [4,5] implemented in PyDMF for initial-path generation and DFT evaluated with Gaussian for obtaining approximate transition-state structures. These structures were further refined using Gaussian. All DFT calculations were performed at ... (description of the calculation level).
 
 ## Community guidelines
 
