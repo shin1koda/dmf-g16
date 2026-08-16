@@ -57,7 +57,7 @@ The underlying methods used by dmf-g16 are described in Refs. 3–5. We would gr
 
 For example:
 
-> Double-ended transition-state searches were performed using dmf-g16 [1], a Gaussian [appropriate reference] wrapper for PyDMF [2], a Python package implementing the Direct MaxFlux (DMF) method [3]. In these searches, two potential-energy models were employed: the flat-bottom elastic network model [4,5] implemented in PyDMF for initial-path generation and DFT evaluated with Gaussian for obtaining approximate transition-state structures. These structures were further refined using Gaussian. All DFT calculations were performed at ... (description of the calculation level).
+> Double-ended transition-state searches were performed using dmf-g16 [1], a Gaussian [appropriate reference] wrapper for PyDMF [2], employing the Direct MaxFlux method [3] with two potential-energy models: the flat-bottom elastic network model [4,5] implemented in PyDMF for initial-path generation and DFT evaluated with Gaussian for obtaining approximate transition-state structures. These structures were further refined using Gaussian. All DFT calculations were performed at ... (description of the calculation level).
 
 ## Community guidelines
 
